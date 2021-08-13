@@ -5,44 +5,88 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">        
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     </head>
-    <body>
+    <body>        
         <!--Navigation as a vertical side-bar-->
         <div class="sidenav">
-          <a href="#">Introduction</a>
-          <a href="#">Research</a>
-          <a href="#">Iteration Phases</a>
-          <a href="#">Product</a>
-          <a href="#">Prototype</a>
-          <a href="#">What I learned</a>          
+          <a href="#intro">Introduction</a>
+          <a href="#research">Research</a>
+          <a href="#iteration">Iteration Phases</a>
+          <a href="#product">Product</a>
+          <a href="#prototype">Prototype</a>
+          <a href="#learned">What I learned</a>          
         </div>
+        <a id="intro"></a>
         <div class="main">
             <!--Introduction using Bootstrap jumbotron-->
-            <div class="jumbotron">
+            <div class="jumbotron">              
               <img class="mypic" src="images/portrait.jpg";>
               <h1 class="display-4">Professional Portfolio: Frontend Development</h1>
-              <p class="lead">Individual project - Create a professional portfolio using HTML, CSS, JavaScript and Bootstrap components. Throughout multiple phases, I also iterated on code responsive desing elements and added interactive details. It uses utility classes for typography and spacing to space content out within the larger container.</p>
+              <p class="lead"><u><b>Individual project: </u></b> Create a professional portfolio using HTML, CSS, JavaScript and Bootstrap components. Throughout multiple phases, I also iterated on code responsive desing elements and added interactive details. It uses utility classes for typography and spacing to space content out within the larger container.</p>
               <h3>My Role: Front End Developer</h3>
               <h4>Timeline: 5 weeks</h4>
+              <hr>
             </div>
-            <!--Research-->
-            <div>
-            <h1>Research</h1>
+            <!--Research using Bootstrap col and jumbotron-->
+            <div class="jumbotron">  
+              <a id="research"></a>            
+              <h1 class="display-4">Research</h1>
+              <p class="lead"><u><b>Problem Statement:</u></b> With a very competitive and broad range of amazing designs on the internet, how might I, Lynlee Roeber, promote myself in UX/UI Design and stand out among the crowd?</p>
+              <div class="row">
+                <div class="col-6 col-md-4"><img class="ux" src="images/ux.png";></div>
+                <div class="col-6 col-md-4"><p class="lead"><u><b>Solution:</u></b> I need to create an interactive webpage that demostrates the skills I have learned in frontend development and advocate my design thinking process whilte designing an athestically pleasing portfolio.</p></div>                
+                <div class="col-6 col-md-4"><img class="cloud" src="images/cloud.png";></div>
+              </div>              
+              <p class="lead"><u><b>Action Plan:</u></b> I developed a 60-120 action plan. This included bringing focus of how to accomplish my dreams and put in place a layout of my career expectations for my future endeavors.</p>
+              <div class="row">
+                <div class="col-6 col-md-4"><p class="lead"><u><b>Personal Style Guide:</u></b> With infinite choices, my style tile was more challenging than I thought it would be. There are so many layers to my creativity, how can I only choose one path? Eventually, I narrowed it down and was happy with the end result. This eventually provided a foundation for my color scheme and logo design.</p></div>
+                <div class="col-12 col-md-8"><img class="styletile" src="images/styletile.png";></div>
+              </div>
+              <hr>
             </div>
-            <!--Iteration Phases-->
-            <div>
-            <h1>Iteration Phases</h1>
+            <!--Iteration Phases using Bootstrap jumbotron-->
+            <div class="jumbotron">
+              <a id="iteration"></a>            
+              <h1 class="display-4">Iteration Phases</h1>
+              <p class="lead"><u><b>UX Design Portfolio and Job prep:</u></b> After creating a 120 day action plan and job prep, the assigment helped implement the visual aspects of "who I am" as a designer. From Moodboard to personal style guide I was able to develop a responsive portfolio in Figma.</p>
+              <img class="projects" src="images/projects.png";>
+              <hr>
+              <p class="lead"><u><b>Code your Portfolio Homepage:</u></b> While redlining the portfolio page in Figma, I had to consider the coding possibilities in both HTML and CSS. Creating a clone from the mockup in Figma deeded structure and styling in order to upload the visual webpage through GitHub.</p>
+              <img class="portfoliofigma" src="images/portfoliofigma.png";>
+              <hr>
+              <p class="lead"><u><b>Iteratation of the Portfolio and Code Responsive Design Elements:</u></b> 3 Iterations were made to complete the final product. Originally, the font on the navbar enlarged when hovered over, but the enlarged font made the page shfit, so no elargement was the way to go. The sections of skills and work were too close togeather, therefore were split into 2 separate pages. A contact page was not designed in HW17 and was added per tester request.</p>
+              <img class="feedback" src="images/feedback.png";>
+              <hr>
+              <p class="lead"><u><b>Adding Interactive Elements:</u></b> The interactive pieces were fun to make and included to create a sense of engagement for the user. When hovering over buttons, they enlarge and change color. The use of gifs also gave the website a feeling of fun and playfulness, while keeping a professional look.</p>              
+              <span>
+              <img class="confetti" src="images/confetti.gif";>
+              <img class="buttons" src="images/buttons.png";>
+              <img class="sparkleconfetti" src="images/sparkleConfetti.gif";>
+              </span>
+              <hr>
             </div>
-            <!--Product-->
-            <div>
-            <h1>Product</h1>
+            <!--Product using Bootstrap media object-->
+            <a id="product"></a>
+            <div class="media">
+              <img src="images/logo.png" class="align-self-start mr-3">
+              <div class="media-body">
+                <h1 class="mt-0">Product</h1>
+                <p class="lead">The end product created is a professional portfolio coded and designed for full website engagement. The UX/UI Designer, Lynlee Roeber, is represented well in establishing accomplishments, design projects, and Frontend development abilities.</p>
+              </div>
+             </div>
+            <hr>            
+            <!--Prototype using Bootstrap jumbotron-->
+            <div class="jumbotron">
+              <a id="prototype"></a>            
+              <h1 class="display-4">Prototype</h1>
+              <img class="prototype" src="images/prototype.png";>
+              <hr>
             </div>
-            <!--Prototype-->
-            <div>
-            <h1>Prototype</h1>
-            </div>
-            <!--What I learned-->
-            <div>
-            <h1>What I learned</h1>
+            <!--What I learned using Bootstrap jumbotron-->
+            <div class="jumbotron">  
+              <a id="learned"></a>            
+              <h1 class="display-4">What I learned</h1>
+              <p class="lead">The foundational knowledge of frontend development is absolutely vital to the UX/UI design process and implementation of web design as a whole. I understand and appreciate the developers abilities to build web products and I value thier point of view. Working togeather as a team (UIXUI and frontend) and being able to discuss future possibilities in web development is now an exciting reality!</p>              
+              <hr>
             </div>
         </div>
     </body>
